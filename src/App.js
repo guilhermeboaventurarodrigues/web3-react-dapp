@@ -1,7 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+
+import Web3 from "web3";
+import useToken from "./hooks/useWorkToken";
 
 function App() {
+  const { contract } = useToken();
+  console.log(contract);
   return (
     <div className="App">
       <header className="App-header">
